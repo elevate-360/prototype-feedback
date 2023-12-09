@@ -20,10 +20,10 @@ export default function Layout() {
 
     return (
         <center>
-            <Card className={`${windowWidth >= 768 ? 'w-75' : ''}`}>
+            <Card className={`${windowWidth >= 768 ? 'w-50' : ''}`}>
                 <Card.Img variant="top" src="/img/Product Review.jpg" />
                 <Card.Body>
-                    <FeedbackForm />
+                    <FeedbackForm width={windowWidth} />
                 </Card.Body>
             </Card>
         </center>
